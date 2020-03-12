@@ -8,9 +8,13 @@
   
   &--name{
     font-size: 3.5vw;
-    background-color: $color-terracota-dar;
+    background-color: $color-terracota-dark;
     width: fit-content;
     padding: 0 1.5rem;
+
+    @include responsive(tab-port){
+      font-size: 3rem;
+    }
   }
   
   &--sub{
@@ -20,6 +24,13 @@
     padding: 0 1.5rem;
     font-weight: 700;
     margin-left: 2rem;
+
+    @include responsive(tab-port){
+      font-size: 2rem;
+    }
+    @include responsive(phone-land){
+      margin-left: -3.6rem;
+    }
   }
 }
 
@@ -44,9 +55,23 @@
 }
 
 .paragraph{
-    font-size: $default-font-size;
+    font-size: 1.6rem;
+    word-spacing: .2rem;
+
+    @include responsive(tab-land){
+      font-size: 1.5rem;
+    }
+    @include responsive(tab-port){
+      font-size: 1.4rem;
+    }
+    @include responsive(phone-port){
+      font-size: 1.6rem;
+    }
 
     &:not(:last-child){
         margin-bottom: 3rem;
+    }
+    &:hover {
+      word-spacing: .25rem;
     }
 }

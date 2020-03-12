@@ -4,26 +4,50 @@
   position: relative;
   background-image: linear-gradient(to bottom, $color-bluegreen-dark, $color-cream);
   clip-path: polygon(50% 0%, 100% 0, 100% 96%, 84% 93%, 71% 99%, 51% 98%, 33% 93%, 13% 98%, 0 93%, 0 0);
-  font-size: 4rem;
   font-weight: 900;
   color: $color-white;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 
-  &__picture-img{
+  &__front {
+    width: 100%;
+    margin-top: -10%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+    @include responsive(phone-land){
+      align-content: center;
+    }
+  }
+
+  &__picture-img {
     border-radius: 100%;
     width: 25vw;
+
+    @include responsive(tab-port){
+      width: 18rem;
+    }
   }
 
   &__text {
     margin-left: -7%;
-    margin-top: 13%;   
+    margin-top: 13%;  
+    
+    @include responsive(phone-land){
+      margin-left: 7%;
+      margin-top: 8%;
+    }
   }
 
   &__arrow {
-    margin-top: -5%;
+    position: absolute;
+    bottom: 8%;
+    font-size: 4rem;
+
     &:hover {
       cursor: pointer;
     }
@@ -44,8 +68,8 @@
   font-weight: 400;
   color: $color-black-green;
 
-  &:hover {
-    text-size-adjust: 2%;
+  @include responsive(phone-land){
+    margin-top: -7vh;
   }
 }
 

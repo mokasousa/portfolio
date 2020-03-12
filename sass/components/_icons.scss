@@ -1,5 +1,5 @@
 .icons {
-    width: 80%;
+    width: 85%;
     max-width: 86.5rem;
     display: flex;
     flex-wrap: wrap;
@@ -12,30 +12,35 @@
     // backface-visibility: hidden;
     transition: all 2s;
 
-    // @include responsive(tab-land) {
-    //   width: 80rem;
-    // }
-    // @include responsive(tab-port) {
-    //   width: 65rem;
-    // }
-    // @include responsive(phone-land) {
-    //   width: 45rem;
-    // }
+    @include responsive(tab-land) {
+      width: 60rem;
+    }
+    @include responsive(tab-port) {
+      width: 49rem;
+    }
+    @include responsive(phone-land) {
+      width: 39rem;
+    }
+    @include responsive(phone-port) {
+      width: 34rem;
+    }
   
     &__stack {
       padding: 1rem;
       border-radius: 100%;
       text-align: center;
-  
-      -webkit-animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-        animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
       
       &:not(:last-child){
         margin: .2rem;
       }
+
+      &-img {
+        height: 5rem;
+      }
       
       &-caption {
         color: $color-black-green;
+        background-color: $color-white;
         text-align: center;
         opacity: 0;
         visibility: hidden;
