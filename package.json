@@ -1,0 +1,14 @@
+{
+  "name": "portifolio-ms",
+  "version": "1.0.0",
+  "description": "Portfolio Monica Sousa",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss style/style.css -w"
+  },
+  "author": "Mônica Sousa",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.13.1"
+  }
+}

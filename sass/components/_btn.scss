@@ -1,0 +1,30 @@
+.ref{
+    &:link, 
+    &:visited{
+        text-decoration: none;
+        color: $color-black-green;
+        background-color: $color-yellow-light;
+    }
+}
+
+.header__arrow {
+    &-link,
+    &-link:link,
+    &-link:visited {
+        text-decoration: none;
+        color: $color-cream;
+        padding: 0 35rem;
+    
+        -webkit-animation: bounce-top 2.5s both infinite;
+            animation: bounce-top 2.5s both infinite;
+    }
+}
+
+.footer__link{
+    &,
+    &:link,
+    &:visited {
+        text-decoration: none;
+        color: $color-black-green;
+    }
+}

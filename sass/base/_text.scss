@@ -1,0 +1,52 @@
+
+.heading-primary{
+    text-transform: uppercase;
+    color: $color-cream;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+  
+  &--name{
+    font-size: 3.5vw;
+    background-color: $color-terracota-dar;
+    width: fit-content;
+    padding: 0 1.5rem;
+  }
+  
+  &--sub{
+    font-size: 2.5vw;
+    background-color: $color-pink;
+    width: fit-content;
+    padding: 0 1.5rem;
+    font-weight: 700;
+    margin-left: 2rem;
+  }
+}
+
+.heading-secondary{
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  background-image: linear-gradient(to right, $color-terracota-dark, $color-terracota-light);
+  color: transparent;
+  -webkit-background-clip: text;
+  text-align: center;
+
+  &:hover{
+    transform: scale(1.1);
+  }
+}
+
+.heading-terciary{
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.paragraph{
+    font-size: $default-font-size;
+
+    &:not(:last-child){
+        margin-bottom: 3rem;
+    }
+}
